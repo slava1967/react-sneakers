@@ -41,7 +41,14 @@ header {
   border-radius: 10px;
   padding: 0 15px;
   position: relative;
-
+  .clear {
+    position: absolute;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    top: 14px;
+    right: 15px;
+  }
   input {
     border: 0;
     padding: 13px;
@@ -70,13 +77,11 @@ header {
   background: #ffffff;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
-
   .items {
     flex: 1;
     overflow: auto;
     margin-bottom: 40px;
   }
-
   h2 {
     margin: 0;
   }
