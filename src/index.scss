@@ -57,36 +57,6 @@ header {
   }
 }
 
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.drawer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 420px;
-  height: 100%;
-  right: 0;
-  background: #ffffff;
-  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  .items {
-    flex: 1;
-    overflow: auto;
-    margin-bottom: 40px;
-  }
-  h2 {
-    margin: 0;
-  }
-}
-
 .cartItem {
   border: 1px solid #f3f3f3;
   border-radius: 20px;
@@ -188,5 +158,17 @@ header {
 
   &:active {
     background: darken(#9dd558, 5%);
+  }
+}
+
+@keyframes button-loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }
