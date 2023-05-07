@@ -45,7 +45,7 @@ export const Drawer = ({ onCloseCart, items = [], onRemove, opened }) => {
           <img
             onClick={onCloseCart}
             className="cu-p"
-            src="/img/btn-remove.svg"
+            src="img/btn-remove.svg"
             alt="Remove"
           />
         </h2>
@@ -69,7 +69,7 @@ export const Drawer = ({ onCloseCart, items = [], onRemove, opened }) => {
                   <img
                     onClick={() => onRemove(obj.id)}
                     className="removeBtn"
-                    src="/img/btn-remove.svg"
+                    src="img/btn-remove.svg"
                     alt="Remove"
                   />
                 </div>
@@ -93,7 +93,7 @@ export const Drawer = ({ onCloseCart, items = [], onRemove, opened }) => {
                 onClick={onClickOrder}
                 className="greenButton"
               >
-                Order <img src="/img/arrow.svg" alt="Arrow" />
+                Order <img src="img/arrow.svg" alt="Arrow" />
               </button>
             </div>
           </div>
@@ -106,9 +106,7 @@ export const Drawer = ({ onCloseCart, items = [], onRemove, opened }) => {
                 : 'Please add at least one item to place order.'
             }
             image={
-              isOrderComplete
-                ? '/img/complete-order.jpg'
-                : '/img/empty-cart.jpg'
+              isOrderComplete ? 'img/complete-order.jpg' : 'img/empty-cart.jpg'
             }
           />
         )}
