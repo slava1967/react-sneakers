@@ -19,11 +19,11 @@ export const Card = ({
   const itemObj = { id, title, price, image };
 
   const onClickPlus = () => {
-    onPlus({ id, title, price, image });
+    onPlus({ itemObj });
   };
 
   const onClickFavorite = () => {
-    onFavorite({ id, title, price, image });
+    onFavorite({ itemObj });
     setFavorite(!isFavorite);
   };
 
